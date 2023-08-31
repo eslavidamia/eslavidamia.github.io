@@ -30,21 +30,16 @@ input[type=text]:focus {
     grid-column-start: 3;
     grid-column-end: 4;
     font-family: arial, sans-serif;
-    overflow: hidden;
 }
 .grid-item-3 {
     font-size: 12px;
-    overflow: hidden;
 }
 .grid-item-4 {
     grid-column-start: 2;
     grid-column-end: 3;
 }
-@media screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
     .grid-item-3 {
         display: none;
     }
-}
-* {
-    box-sizing: border-box;
 }
