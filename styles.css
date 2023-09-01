@@ -1,1 +1,186 @@
 
+* {
+    box-sizing: border-box;
+}
+
+a.nav-link {
+    color: gray;
+}
+
+a.nav-link:hover {
+    color: black;
+}
+
+h5 {
+    color: red;
+    margin-left: 50px;
+}
+
+.nodisplay {
+    font-size: 13px;
+}
+
+.example {
+    font-family: Andalé Mono, arial;
+    color: gray;
+}
+
+.asearch {
+    float: right;
+    font-size: 12px;
+    padding: 5px;
+    border: none;
+    background-color: #117fee;
+    color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    .col-34, .nodisplay {
+        display: none;
+    }
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: 45px;
+}
+
+#cond-1, #cond-2, #cond-3, #cond-4 {
+    width: 100%;
+    height: 14px;
+    font-size: 12px;
+    font-weight: 600px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+#cond-1:focus, #cond-2:focus, #cond-3:focus, #cond-4:focus {
+    outline: 1px solid blue;
+}
+
+label {
+    display: inline-block;
+}
+
+.col-16 {
+    float: left;
+    width: 16%;
+    font-size: 14px;
+}
+
+.col-50 {
+    float: left;
+    width: 50%;
+}
+
+.col-34 {
+    float: left;
+    width: 34%;
+    font-size: 12px;
+}
+
+.col-66 {
+    float: left;
+    width: 66%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media only screen and (max-width: 600px) {
+    .col-16, .col-50, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.big-g {
+    margin-left: 250px;
+    width: 300px;
+}
+
+#search {
+    width: 80%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 15px 15px;
+    background-repeat: no-repeat;
+    padding: 10px 10px 15px 40px;
+    margin-left: 80px;
+    background-image: url("search_icon.png");
+    background-size: 20px;
+}
+
+#search:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+#search:focus {
+    outline: 1px solid #ccc;
+}
+
+.grid-item1:hover, .grid-item2:hover {
+    outline: 2px solid #ddd;
+}
+
+.grid {
+    display: grid;
+    justify-content: center;
+    column-gap: 10px;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: right;
+    padding: 10px;
+    border: none;
+}
+
+.grid-item2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: left;
+    padding: 10px;
+    border: none;
+}
+
+#isearch:hover {
+    outline: 2px solid #ddd;
+}
+
+.isearch {
+    display: grid;
+    justify-content: center;
+    column-gap: 10px;
+    grid-template-columns: auto;
+}
+
+#isearch {
+    padding: 10px;
+    border: none;
+}
+
+.buttonIn {
+    position: relative;
+}
+
+#search_image {
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+    color: white;
+}
